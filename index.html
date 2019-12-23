@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf=8">
+        <title class="title">Meme Memory Game by Martin Kim</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- <h1 class="title">
+            Meme Memory Game
+        </h1>
+        <h3 class="title">
+            By Martin Kim
+        </h3> -->
+        <div id="game-start-text" class="overlay-text visible">
+            Meme Matching Game
+            <br> By Martin Kim
+            <span class="overlay-text-small"> Click to Start!</span>
+        </div>
+
+        <h1 id="you-win-text" class="overlay-text">
+            You Win!
+            <span class="overlay-text-small"> Click to play again!</span>
+        </h1>
+        <div id="header">
+            <div class="title">
+                    Flips: <span id="flip-count">0</span>
+            </div>
+            <form id="form">
+                <!-- <input type="radio" name="difficulty" id="easy" value="Easy">Easy
+                <input type="radio" name="difficulty" id="medium" value="Medium">Medium
+                <input type="radio" name="difficulty" id="hard" value="Hard">Hard
+                <br> -->
+            <!-- <button type="button" id="startBtn" onclick="startGame()">Start Game!</button> -->
+            <button type="button" id="restartBtn" onclick="init()">Restart</button>
+            </form>
+            <div class="title">
+                    High Score: <span id="high-score">NONE</span>
+            </div>
+        </div>
+
+        
+        <div class="game-section">
+            <div class="card" data-card="meme1">
+                <img class="face-down" src="backofcard.jpg" alt="">
+                <img class="face-up" src="meme1.jpg" alt="">
+            </div>
+             <div class="card" data-card="meme1">
+                <img class="face-down" src="backofcard.jpg" alt="">
+                <img class="face-up" src="meme1.jpg" alt="">
+            </div>
+             <div class="card" data-card="meme2">
+                <img class="face-down" src="backofcard.jpg" alt="">
+                <img class="face-up" src="meme2.jpg" alt="">
+            </div>
+             <div class="card" data-card="meme2">
+                <img class="face-down" src="backofcard.jpg" alt="">
+                <img class="face-up" src="meme2.jpg" alt="">
+            </div>
+             <div class="card" data-card="meme3">
+                <img class="face-down" src="backofcard.jpg" alt="">
+                <img class="face-up" src="meme3.jpg" alt="">
+            </div>
+             <div class="card" data-card="meme3">
+                <img class="face-down" src="backofcard.jpg" alt="">
+                <img class="face-up" src="meme3.jpg" alt="">
+            </div>
+             <div class="card" data-card="meme4">
+                <img class="face-down" src="backofcard.jpg" alt="">
+                <img class="face-up" src="meme4.jpg" alt="">
+            </div>
+             <div class="card" data-card="meme4">
+                <img class="face-down" src="backofcard.jpg" alt="">
+                <img class="face-up" src="meme4.jpg" alt="">
+            </div>
+             <div class="card" data-card="meme5">
+                <img class="face-down" src="backofcard.jpg" alt="">
+                <img class="face-up" src="meme5.jpg" alt="">
+            </div>
+            <div class="card" data-card="meme5">
+                <img class="face-down" src="backofcard.jpg" alt="">
+                <img class="face-up" src="meme5.jpg" alt="">
+            </div>
+            <div class="card" data-card="meme6">
+                <img class="face-down" src="backofcard.jpg" alt="">
+                <img class="face-up" src="meme6.jpg" alt="">
+            </div>
+            <div class="card" data-card="meme6">
+                <img class="face-down" src="backofcard.jpg" alt="">
+                <img class="face-up" src="meme6.jpg" alt="">
+            </div>
+            <div class="card" data-card="meme7">
+                <img class="face-down" src="backofcard.jpg" alt="">
+                <img class="face-up" src="meme7.jpg" alt="">
+            </div>
+            <div class="card" data-card="meme7">
+                <img class="face-down" src="backofcard.jpg" alt="">
+                <img class="face-up" src="meme7.jpg" alt="">
+            </div>
+            <div class="card" data-card="meme8">
+                <img class="face-down" src="backofcard.jpg" alt="">
+                <img class="face-up" src="meme8.jpg" alt="">
+            </div>
+            <div class="card" data-card="meme8">
+                <img class="face-down" src="backofcard.jpg" alt="">
+                <img class="face-up" src="meme8.jpg" alt="">
+            </div>
+            <div class="card" data-card="meme9">
+                <img class="face-down" src="backofcard.jpg" alt="">
+                <img class="face-up" src="meme9.jpg" alt="">
+            </div>
+            <div class="card" data-card="meme9">
+                <img class="face-down" src="backofcard.jpg" alt="">
+                <img class="face-up" src="meme9.jpg" alt="">
+            </div>
+        </div>
+
+        <script src="memory-game.js"></script>
+    </body>
+</html>
